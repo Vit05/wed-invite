@@ -15,10 +15,6 @@
  */
 
 // src/App.jsx
-import { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import Layout from '@/components/Layout';
-import MainContent from '@/pages/MainContent';
 import LandingPage from '@/pages/LandingPage';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import config from '@/config/config';
@@ -26,11 +22,10 @@ import config from '@/config/config';
 /**
  * App component serves as the root of the application.
  *
- * It manages the state to determine whether the invitation content should be shown.
- * Initially, the invitation is closed and the LandingPage component is rendered.
- * Once triggered, the Layout component containing MainContent is displayed.
+ * This is a simple wedding invitation landing page that displays
+ * the beautiful landing page with all wedding information.
  *
- * This component also uses HelmetProvider and Helmet to set up various meta tags:
+ * This component uses HelmetProvider and Helmet to set up various meta tags:
  *   - Primary meta tags: title and description.
  *   - Open Graph tags for Facebook.
  *   - Twitter meta tags for summary and large image preview.
@@ -42,7 +37,6 @@ import config from '@/config/config';
  * <App />
  */
 function App() {
-  const [isInvitationOpen, setIsInvitationOpen] = useState(false);
   return (
     <HelmetProvider>
       <Helmet>
@@ -70,18 +64,10 @@ function App() {
 
         {/* Additional Meta Tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#FDA4AF" /> {/* Rose-300 color */}
+        <meta name="theme-color" content="#64748B" /> {/* Slate-500 color */}
       </Helmet>
 
-      <AnimatePresence mode='wait'>
-        {!isInvitationOpen ? (
-          <LandingPage onOpenInvitation={() => setIsInvitationOpen(true)} />
-        ) : (
-          <Layout>
-            <MainContent />
-          </Layout>
-        )}
-      </AnimatePresence>
+      <LandingPage />
     </HelmetProvider>
   );
 }
