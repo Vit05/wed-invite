@@ -96,6 +96,16 @@ const config = {
         accountName: "HELEN SMITH",
       }
       // You can add more banks with the same format
+    ],
+
+    // Photo gallery images
+    photos: [
+      '/photos/DSC00615.jpg',
+      '/photos/DSC00757.jpg',
+      '/photos/DSC00840.jpg',
+      '/photos/DSC00970.jpg',
+      '/photos/DSC01116.jpg',
+      '/photos/DSC01221.jpg'
     ]
   }
 };

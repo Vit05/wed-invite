@@ -1,14 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
+import config from '@/config/config';
 
 const PhotoGallery = () => {
-  const photos = [
-    '/photos/DSC00615.jpg',
-    '/photos/DSC00970.jpg',
-    '/photos/DSC01116.jpg',
-    '/photos/DSC01221.jpg'
-  ];
+  const photos = config.data.photos;
 
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,6 +47,11 @@ const PhotoGallery = () => {
               src={photo}
               alt={`Wedding photo ${index + 1}`}
               className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+              onError={(e) => {
+                console.error(`Failed to load image: ${photo}`);
+                e.target.style.display = 'none';
+              }}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-800/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             
@@ -85,6 +86,10 @@ const PhotoGallery = () => {
                 src={selectedPhoto}
                 alt="Wedding photo"
                 className="max-w-full max-h-full object-contain rounded-lg"
+                onError={(e) => {
+                  console.error(`Failed to load modal image: ${selectedPhoto}`);
+                  e.target.src = '/images/og-image.jpg'; // Fallback image
+                }}
               />
               
               {/* Close button */}

@@ -154,6 +154,11 @@ const LandingPage = () => {
                         src="/photos/DSC00840.jpg"
                         alt="Viktor & Helen"
                         className="w-full max-w-sm sm:max-w-lg mx-auto rounded-2xl sm:rounded-3xl shadow-xl border-4 border-slate-200/50"
+                        onError={(e) => {
+                          console.error('Failed to load hero image: /photos/DSC00840.jpg');
+                          e.target.src = '/images/og-image.jpg'; // Fallback image
+                        }}
+                        loading="lazy"
                       />
                       
                       {/* Overlay Gradient */}
@@ -671,6 +676,11 @@ const LandingPage = () => {
             src="/photos/DSC00757.jpg"  
             alt="Viktor & Helen"
             className="w-full h-full object-cover"
+            onError={(e) => {
+              console.error('Failed to load footer image: /photos/DSC00757.jpg');
+              e.target.src = '/images/og-image.jpg'; // Fallback image
+            }}
+            loading="lazy"
           />
           {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-black/30" />
