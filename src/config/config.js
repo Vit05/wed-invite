@@ -1,14 +1,14 @@
 const config = {
   data: {
     // Main invitation title that appears on the page
-    title: "Wedding Invitation - Viktor & Helen",
+    title: "Wedding Invitation - Viktor & Lena",
     // Opening message/description of the invitation
     description:
       "Join us in celebrating our special day as we begin our journey together as husband and wife.",
     // Groom's name
     groomName: "Viktor",
     // Bride's name
-    brideName: "Helen",
+    brideName: "Lena",
     // Groom's parents names
     parentGroom: "Mr. & Mrs. Paliichuk",
     // Bride's parents names
@@ -22,7 +22,7 @@ const config = {
     maps_embed:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6216.419923666835!2d0.00036747612792958223!3d38.82765207173907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129e1d56634df973%3A0xcf858c5ade473f6!2sCasa%20Santonja!5e0!3m2!1sen!2ses!4v1759185632868!5m2!1sen!2ses",
     // Event time (free format, example: "10:00 - 12:00 WIB")
-    time: "4:00 PM - 11:00 PM",
+    time: "2:00 PM - 11:00 PM",
     // Venue/building name
     location: "Casa Santonja",
     // Full address of the wedding venue
@@ -35,13 +35,13 @@ const config = {
     agenda: [
       {
         // First event name
-        title: "Ceremony",
+        title: "Збір гостей",
         // Event date (format: YYYY-MM-DD)
         date: "2025-11-09",
         // Start time (format: HH:MM)
-        startTime: "16:00",
+        startTime: "13:00 - 13:30",
         // End time (format: HH:MM)
-        endTime: "17:00",
+        endTime: "14:00",
         // Event venue
         location: "Casa Santonja",
         // Full address
@@ -49,21 +49,21 @@ const config = {
       },
       {
         // Second event name
-        title: "Cocktail Hour",
-        date: "2025-06-15",
-        startTime: "17:00",
-        endTime: "18:00",
+        title: "Церемонія",
+        date: "2025-11-09",
+        startTime: "14:00",
+        endTime: "14:30",
         location: "Casa Santonja",
-        address: "123 Wedding Lane, New York, NY 10001",
+        address: "CV-729, s/n, 03778 Beniarbeig, Alicante",
       },
       {
         // Third event name
-        title: "Reception",
-        date: "2025-06-15",
-        startTime: "18:00",
-        endTime: "23:00",
+        title: "Коктейльний час",
+        date: "2025-11-09",
+        startTime: "14:30",
+        endTime: "...",
         location: "Casa Santonja",
-        address: "123 Wedding Lane, New York, NY 10001",
+        address: "CV-729, s/n, 03778 Beniarbeig, Alicante",
       }
       // You can add more agenda items with the same format
     ],

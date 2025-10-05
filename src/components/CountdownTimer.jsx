@@ -11,7 +11,11 @@ const CountdownTimer = ({ targetDate }) => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const difference = new Date(targetDate) - new Date();
+      // Create target date in Madrid timezone (2 PM on Nov 9, 2025)
+      const targetDateMadrid = new Date('2025-11-09T14:00:00+01:00');
+      const now = new Date();
+      
+      const difference = targetDateMadrid.getTime() - now.getTime();
       
       if (difference > 0) {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));

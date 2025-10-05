@@ -19,9 +19,23 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				serif: [
-					'Playfair Display',
-					'serif'
+				// Main heading font
+				passions: [
+					'Passions Conflict',
+					'Dancing Script',
+					'cursive'
+				],
+				// All headings (h2, h3, etc.)
+				headings: [
+					'Great Vibes',
+					'Dancing Script',
+					'cursive'
+				],
+				// Modern, readable body font
+				body: [
+					'Jura',
+					'Exo 2',
+					'sans-serif'
 				]
 			},
 			colors: {
