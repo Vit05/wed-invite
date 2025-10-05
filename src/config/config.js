@@ -28,7 +28,7 @@ const config = {
     // Full address of the wedding venue
     address: "CV-729, s/n, 03778 Beniarbeig, Alicante",
     // Image that appears when link is shared on social media
-    ogImage: "/images/og-image.jpg",
+    ogImage: "/images/hero-min.jpg",
     // Icon that appears in browser tab
     favicon: "/images/favicon.ico",
     // List of event agenda/schedule
@@ -58,7 +58,7 @@ const config = {
       },
       {
         // Third event name
-        title: "Коктейльний час",
+        title: "Коктейльна година на знайомства і привітання",
         date: "2025-11-09",
         startTime: "14:30",
         endTime: "...",
@@ -100,12 +100,12 @@ const config = {
 
     // Photo gallery images
     photos: [
-      '/photos/DSC00615.jpg',
-      '/photos/DSC00757.jpg',
-      '/photos/DSC00840.jpg',
-      '/photos/DSC00970.jpg',
-      '/photos/DSC01116.jpg',
-      '/photos/DSC01221.jpg'
+      '/photos/001-min.jpg',
+      '/photos/002-min.jpg',
+      '/photos/003-min.jpg',
+      '/photos/004-min.jpg',
+      '/photos/005-min.jpg',
+      '/photos/006-min.jpg'
     ]
   }
 };

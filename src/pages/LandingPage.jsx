@@ -2,7 +2,7 @@
 import config from '@/config/config';
 import {formatEventDate} from '@/lib/formatEventDate';
 import {motion} from 'framer-motion';
-import {Calendar, Camera, Clock, Gift, Heart, MapPin, Music, Sparkles} from 'lucide-react';
+import {Calendar, Camera, Clock, Gift, Heart, MapPin, Sparkles} from 'lucide-react';
 import CountdownTimer from '@/components/CountdownTimer';
 import PhotoGallery from '@/components/PhotoGallery';
 
@@ -161,7 +161,7 @@ const LandingPage = () => {
                                 {/* Main Photo */}
                                 <div className="relative z-10">
                                     <img
-                                        src="/photos/DSC00840.jpg"
+                                        src="/photos/hero-min.JPEG"
                                         alt="Viktor & Lena"
                                         className="w-full max-w-sm sm:max-w-lg mx-auto rounded-2xl sm:rounded-3xl shadow-xl border-4 border-slate-200/50"
                                         onError={(e) => {
@@ -629,23 +629,24 @@ const LandingPage = () => {
                                         </div>
                                         <h3 className="text-xl sm:text-2xl font-light text-slate-800 group-hover:text-slate-600 transition-colors">Підтвердження</h3>
                                     </div>
-                                     <p className="text-slate-600 font-light leading-relaxed">
-                                         Будь ласка, підтвердіть свою присутність до 17 жовтня 2025 року, щоб ми могли краще підготуватися до свята.
-                                     </p>
-                                     <p className="text-slate-600 font-light leading-relaxed">
-                                         Ми з нетерпінням чекаємо цього дня і будемо дуже раді розділити його з вами!
-                                     </p>
-                                     <motion.a
-                                         whileHover={{ scale: 1.05, y: -2 }}
-                                         whileTap={{ scale: 0.95 }}
-                                         href="https://forms.gle/dFhtRMC4AbaQPh3x5"
-                                         target="_blank"
-                                         rel="noopener noreferrer"
-                                         className="inline-flex items-center gap-3 bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium shadow-xl transition-all duration-300 mt-4"
-                                     >
-                                         <Calendar className="w-5 h-5" />
-                                         Підтвердити Присутність
-                                     </motion.a>
+                                    <p className="text-slate-600 font-light leading-relaxed">
+                                        Будь ласка, підтвердіть свою присутність до 20 жовтня 2025 року, щоб ми могли
+                                        краще підготуватися до свята.
+                                    </p>
+                                    <p className="text-slate-600 font-light leading-relaxed">
+                                        Ми з нетерпінням чекаємо цього дня і будемо дуже раді розділити його з вами!
+                                    </p>
+                                    <motion.a
+                                        whileHover={{scale: 1.05, y: -2}}
+                                        whileTap={{scale: 0.95}}
+                                        href="https://forms.gle/dFhtRMC4AbaQPh3x5"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-3 bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-medium shadow-xl transition-all duration-300 mt-4"
+                                    >
+                                        <Calendar className="w-5 h-5"/>
+                                        Підтвердити Присутність
+                                    </motion.a>
                                 </div>
                             </motion.div>
 
@@ -664,22 +665,22 @@ const LandingPage = () => {
                                         </div>
                                         <h3 className="text-xl sm:text-2xl font-light text-slate-800 group-hover:text-slate-600 transition-colors">Квіти</h3>
                                     </div>
-                                    <p className="text-slate-600 font-light leading-relaxed">
-                                        Просимо не дарувати квіти — вони швидко зів’януть, а нам хотілося б зберегти
-                                        пам’ять про цей день надовше.
-                                    </p>
-                                    <p className="text-slate-600 font-light leading-relaxed">
-                                        Замість квітів ви можете подарувати пляшку білого сухого вина, щоб ми розпили її
-                                        разом на річницю,
-                                    </p>
-                                    <p className="text-slate-600 font-light leading-relaxed">
-                                        вінілову платівку — ми їх колекціонуємо,
-                                    </p>
-                                    <p className="text-slate-600 font-light leading-relaxed">
-                                        або лотерейний квиток.
-                                    </p>
 
-                                    <p className="text-slate-600 font-light leading-relaxed">Найбільша цінність для нас — ваша присутність і щирі слова.</p>
+
+                                    <p className="text-slate-600 font-light leading-relaxed"> Просимо не дарувати квіти
+                                        — вони швидко зів’януть, а нам хотілося б зберегти пам’ять про цей день
+                                        надовше.</p>
+                                    <p className="text-slate-600 font-light leading-relaxed"> Замість квітів ви можете
+                                        подарувати квіткову підписку — ми отримуватимемо квіти протягом усього року
+                                        🌸</p>
+                                    <p className="text-slate-600 font-light leading-relaxed"> За подробицями звертайтесь
+                                        до Вікторії (+380 67 943 46 26).</p>
+                                    <p className="text-slate-600 font-light leading-relaxed"> Також ви можете подарувати
+                                        пляшку сухої ка́ви (Cava), просекко чи рому</p>
+                                    <p className="text-slate-600 font-light leading-relaxed"> або вінілову платівку — ми
+                                        їх колекціонуємо (наприклад, в стилі Jazz, Soul, Blues, R&B чи The Beatles, ...)</p>
+                                    <p className="text-slate-600 font-light leading-relaxed"> Найбільша цінність для нас
+                                        — ваша присутність і щирі слова.</p>
                                 </div>
                             </motion.div>
 
@@ -693,12 +694,12 @@ const LandingPage = () => {
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <img
-                        src="/photos/DSC00757.jpg"
+                        src="/photos/footer-min.JPG"
                         alt="Viktor & Lena"
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                            console.error('Failed to load footer image: /photos/DSC00757.jpg');
-                            e.target.src = '/images/og-image.jpg'; // Fallback image
+                            console.error('Failed to load footer image: /footer-min.JPG');
+                            e.target.src = '/footer-min.JPG'; // Fallback image
                         }}
                         loading="lazy"
                     />
@@ -723,7 +724,7 @@ const LandingPage = () => {
                                     Viktor & Lena
                                 </h3>
                                 <p className="text-lg sm:text-xl text-white/90 font-light drop-shadow-md">
-                                    15 Листопада, 2025
+                                    9 Листопада, 2025
                                 </p>
                             </div>
 
