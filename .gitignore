@@ -25,9 +25,5 @@ dist-ssr
 
 # Large media files
 public/audio/
-public/photos/*.jpg
-public/photos/*.jpeg
-public/photos/*.JPG
-public/photos/*.JPEG
 # Backup original photos (if you want to keep them locally)
 public/photos/originals/
