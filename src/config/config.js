@@ -14,7 +14,7 @@ const config = {
     // Bride's parents names
     parentBride: "Mr. & Mrs. Smith",
     // Wedding date (format: YYYY-MM-DD)
-    date: "2025-11-09",
+    date: "2026-07-18",
     // Google Maps link for directions (opens Google Maps with directions)
     maps_url: "https://www.google.com/maps/dir/?api=1&destination=38.8276521,0.0029424",
     // Google Maps embed code to display map on website

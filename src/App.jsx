@@ -19,6 +19,7 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import config from '@/config/config';
 import TeaserLandingPage from './pages/TeaserLandingPage';
+import LandingPage from "@/pages/LandingPage.jsx";
 
 /**
  * App component serves as the root of the application.
@@ -68,7 +69,7 @@ function App() {
         <meta name="theme-color" content="#64748B" /> {/* Slate-500 color */}
       </Helmet>
 
-      <TeaserLandingPage />
+      <LandingPage />
     </HelmetProvider>
   );
 }
